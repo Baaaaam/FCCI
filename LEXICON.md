@@ -63,9 +63,11 @@ They acts on facilities :
 		- One or several dephased reactors
 		- Fixed burn up or fixed cycle time
 
+		=> ALL reactor model simplifications...
+
 	- Pool and storage : 
 		- With or Without decay
-		
+
 ## Output
 
 ### Direct output
