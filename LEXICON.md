@@ -21,10 +21,10 @@ simulation, including:
 Model:
 
 Represents the computationnal tool that processes the input and performing output calculation according to defined hypothesis. Here's a non exhaustive list of models : 
-<ul>
+
 	* CYCLUS
 	* CLASS
-<ul>
+
 
 Output:
 
