@@ -9,7 +9,7 @@ To-do
 - [ ] Title
 - [ ] Introduction (Goal / Achievement )
 - [ ] Lexicon
-- [ ] Workflow description
+- [x] Workflow description
 - [ ] Pb 1 definition
 
     
