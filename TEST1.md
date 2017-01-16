@@ -6,6 +6,15 @@ Problem 1:
 PWR UOX:
 ````````
 
+#. Simple calculation
+
+#. Full calculation fix parameters
+
+#. Sensitivity analysis
+
+
+
+
 Output var:
   - Unat consumption
   - Pu mass
