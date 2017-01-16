@@ -76,7 +76,7 @@ Cycle Input and Model simplification
 Description of the all the degree of freedom of the experiences:
 - Definition of the input factors (variables and parameters) and their variation
   range/allowed values (if applicable), example:
-  - burnup [BU<sub>min<sub>, BU<sub>max<sub>]
+  - burnup [ BU<sub>min<sub>, BU<sub>max<sub> ]
   - FiFo/LiFo/random/mix
   - ...
 - Definition of the model simplification considered in the experience:
