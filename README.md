@@ -3,14 +3,6 @@ OSAFC  : Sensitity Analysis for Fuel Cycle
 *****************************************
 
 
-To-do
-----
-
-- [ ] Title
-- [ ] Introduction (Goal / Achievement )
-- [ ] Lexicon
-- [x] Workflow description
-- [ ] Pb 1 definition
-
+[Lexicon](LEXICON.md)
     
 [TEST1](TEST1.md)
