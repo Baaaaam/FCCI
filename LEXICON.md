@@ -33,15 +33,12 @@ Or not ordonnated:
 
 ### Input parameter
 
-An input parameter is not measurable in the real fleet and has to be estimated.
+An input factor is not measurable in the real fleet and has to be estimated.
 
 	- Reactivity threshold for maximal burn up
+	- Time steps
 	- ...?
 	
-
-
-
-
 ## Model
 
 Represents the computationnal tool that processes the input and performing output calculation according to defined hypothesis. Here's a non exhaustive list of models : 
@@ -50,11 +47,6 @@ Represents the computationnal tool that processes the input and performing outpu
 	- CLASS
 	- COSI
 
-
-### Model parameter
-
-	- Time steps
-
 ### Model simplifications
 
 	decay or not
@@ -62,9 +54,9 @@ Represents the computationnal tool that processes the input and performing outpu
 
 
 
-## Hypothesis
+## Design of experiment
 
-Hypothesis of scenario define the space range for input parameter.
+Design Of Experiment is the range of variation for Input variables and parameters
 
 ## Output
 
