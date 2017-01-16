@@ -1,37 +1,75 @@
-*******
+==============================
 LEXICON
-*******
+==============================
 
+## Scenario
 
-Scenario:
+A scenario is constituted by the following set :
 
-Input (var + cycle description) + Model + output
+	- Input
+	- Model
+	- Output
 
+It defines a well defined trajectory for a nuclear fleet evolution on a given time frame.
 
-Input:
-Self consistant set of parameters that allows the complete description of the
-simulation, including:
- - a time frame
- - all the cycle: different facilities and
-  potential connections
- - each facilities parameters (might be some overlap) and
-  modeling options
- - their evolutions along the time frame considered.
+## Input
 
-Model:
+Self consistant set of input parameters and factors that allows the complete description of the simulated scenario.
 
-Output:
+### Input variable
 
-Hypothesis:
+An input variable is a factor that is observable in a real fleet and has to be defined by the user. Input variable can be ordonnated: 
 
-Modelisation Parameter:
+	- Time range
+	- Cycle units (facilities and connections)
+	- Facilities parameters (BU, cooling time, tail assets, power, etc.)
+	- Facilities evolution
+	- Model hypothesis
 
-Metric:
-  Understandable values
+Or not ordonnated:
 
-input Parameter:
-  all facilities parameters: BU, Cooling time, tails asset, Power, cycle time,
-  Capacity factor,...
+	- Separation : On demand or on line
+	- Fuel strategy : FiFo, LiFo, Random...
+
+### Input parameter
+
+An input factor is not measurable in the real fleet and has to be estimated.
+
+	- Reactivity threshold for maximal burn up
+	- Time steps
+	- ...?
+	
+## Model
+
+Represents the computationnal tool that processes the input and performing output calculation according to defined hypothesis. Here's a non exhaustive list of models : 
+
+	- CYCLUS
+	- CLASS
+	- COSI
+
+### Model simplifications
+
+	decay or not
+	depletion or not
+
+## Output
+
+### Direct output
+
+An direct output is composed by raw data calculated by the model according to inputs.
+
+### Indirect output
+
+Indirect outputs are all data calculated from direct output after one or several operations.
+
+## Design of experiment
+
+Design Of Experiment is the range of variation for Input variables and parameters
+
+## Metric
+
+  A metric defines a set of observables with associated unit.
+
 
 
 
