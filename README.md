@@ -7,7 +7,7 @@ Problem 1:
 
 
 PWR UOX:
-''''''''
+````````
 
 Output var:
   - Unat consumption
