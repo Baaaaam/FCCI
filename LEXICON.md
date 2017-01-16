@@ -14,17 +14,33 @@ It defines a well defined trajectory for a nuclear fleet evolution on a given ti
 
 ## Input
 
-Self consistant set of input parameters that allows the complete description of the simulated scenario.
+Self consistant set of input parameters and factors that allows the complete description of the simulated scenario.
 
-## Input Parameter
+### Input variable
 
-Data used to build input for scenario that should be chosen by the user. Input parameter is used to define : 
+An input variable is a factor that is observable in a real fleet and has to be defined by the user. Input variable can be ordonnated: 
 
-	- Time frame
+	- Time range
 	- Cycle units (facilities and connections)
 	- Facilities parameters (BU, cooling time, tail assets, power, etc.)
 	- Facilities evolution
 	- Model hypothesis
+
+Or not ordonnated:
+
+	- separation demand or one line
+	- fifo lifo
+
+### Input parameter
+
+An input parameter is not measurable in the real fleet and has to be estimated.
+
+	- Reactivity threshold for maximal burn up
+	- ...?
+	
+
+
+
 
 ## Model
 
@@ -34,12 +50,17 @@ Represents the computationnal tool that processes the input and performing outpu
 	- CLASS
 	- COSI
 
-## Model features
+
+### Model parameter
+
+	- Time steps
+
+### Model simplifications
 
 	decay or not
 	depletion or not
-	separation demand or one line
-	fifo lifo
+
+
 
 ## Hypothesis
 
@@ -49,12 +70,9 @@ Hypothesis of scenario define the space range for input parameter.
 
 An output is composed by raw data calculated by the model according to input and hypothesis of the scenario.
 
-
-
-
 ## Modelisation Parameter
 
-
+A modelisation parameter is an input data that should be set for running the model, but that is 
 
 
 ## Metric
