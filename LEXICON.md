@@ -5,9 +5,10 @@ LEXICON
 ## Scenario
 
 A scenario is constituted by the following set :
-	- Input
-	- Model
-	- Output
+
+ - Input
+ - Model
+ - Output
 
 It defines a well defined trajectory for a nuclear fleet evolution on a given time frame.
 
