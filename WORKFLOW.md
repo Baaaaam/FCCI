@@ -67,7 +67,7 @@ Metrics can be deferencied into 2 categories:
 - direct output metrics, which should directly be produced by a generic fuel
   cycle tool, as material flows, materials compositions, power generated,
   ressource comsubsion...
-- indirect metrics, that require addition computations to be determine, such as
+- indirect ouput metrics, that require addition computations to be determine, such as
   cost, radio-toxicity, decayheat....
 
 
