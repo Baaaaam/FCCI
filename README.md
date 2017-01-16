@@ -3,8 +3,12 @@ SAFC  : Sensitity Analysis for Fuel Cycle
 
 
 Problem 1:
+----------
+
 
 PWR UOX:
+''''''''
+
 Output var:
   - Unat consumption
   - Pu mass
