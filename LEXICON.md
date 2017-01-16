@@ -28,8 +28,8 @@ An input variable is a factor that is observable in a real fleet and has to be d
 
 Or not ordonnated:
 
-	- separation demand or one line
-	- fifo lifo
+	- Separation : On demand or on line
+	- Fuel strategy : FiFo, LiFo, Random...
 
 ### Input parameter
 
@@ -54,15 +54,21 @@ Represents the computationnal tool that processes the input and performing outpu
 
 ## Output
 
-An output is composed by raw data calculated by the model according to input and hypothesis of the scenario.
+### Direct output
+
+An direct output is composed by raw data calculated by the model according to inputs.
+
+### Indirect output
+
+Indirect outputs are all data calculated from direct output after one or several operations.
 
 ## Design of experiment
 
 Design Of Experiment is the range of variation for Input variables and parameters
 
-
 ## Metric
-  Understandable values
+
+  A metric defines a set of observables with associated unit.
 
 
 
