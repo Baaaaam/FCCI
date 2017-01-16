@@ -49,9 +49,23 @@ Represents the computationnal tool that processes the input and performing outpu
 
 ### Model simplifications
 
-	decay or not
-	depletion or not
+Model simplifications are used to for optimizing CPU calculation time without impacting the output. Simplifications have to be done according to targetted output variables.
 
+They acts on facilities : 
+
+	- Fabrication plant : 
+		- Relation between storage and targeted burn up (Always same fissile fraction, mathematical relation, neural network, etc.)
+
+	- Reactor : 
+		- Bateman solver or recipe based depletion
+		- With or without reactor first loading 
+		- With or without fuel loading pattern neighborhood
+		- One or several dephased reactors
+		- Fixed burn up or fixed cycle time
+
+	- Pool and storage : 
+		- With or Without decay
+		
 ## Output
 
 ### Direct output
