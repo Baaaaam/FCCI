@@ -52,19 +52,13 @@ Represents the computationnal tool that processes the input and performing outpu
 	decay or not
 	depletion or not
 
-
-
-## Design of experiment
-
-Design Of Experiment is the range of variation for Input variables and parameters
-
 ## Output
 
 An output is composed by raw data calculated by the model according to input and hypothesis of the scenario.
 
-## Modelisation Parameter
+## Design of experiment
 
-A modelisation parameter is an input data that should be set for running the model, but that is 
+Design Of Experiment is the range of variation for Input variables and parameters
 
 
 ## Metric
