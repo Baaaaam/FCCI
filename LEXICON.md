@@ -6,9 +6,9 @@ LEXICON
 
 A scenario is constituted by the following set :
 
- - Input
- - Model
- - Output
+	- Input
+	- Model
+	- Output
 
 It defines a well defined trajectory for a nuclear fleet evolution on a given time frame.
 
@@ -18,12 +18,13 @@ Self consistant set of input parameters that allows the complete description of 
 
 ## Input Parameter
 
-Data used to build input for scenario. Input parameter is used to define : 
+Data used to build input for scenario that should be chosen by the user. Input parameter is used to define : 
 
 	- Time frame
 	- Cycle units (facilities and connections)
 	- Facilities parameters (BU, cooling time, tail assets, power, etc.)
 	- Facilities evolution
+	- Model hypothesis
 
 ## Model
 
@@ -33,11 +34,16 @@ Represents the computationnal tool that processes the input and performing outpu
 	- CLASS
 	- COSI
 
+## Model features
+
+	decay or not
+	depletion or not
+	separation demand or one line
+	fifo lifo
+
 ## Hypothesis
 
-Simplification / choix du cycle
-
-
+Hypothesis of scenario define the space range for input parameter.
 
 ## Output
 
