@@ -5,7 +5,6 @@ LEXICON
 ## Scenario
 
 A scenario is constituted by the following set :
-
 	- Input
 	- Model
 	- Output
