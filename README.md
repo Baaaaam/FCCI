@@ -2,12 +2,28 @@
 OSAFC  : Sensitity Analysis for Fuel Cycle
 *****************************************
 
-[INTRODUCTION](Introduction.md)
 
 Introduction
-Objectives
-Work methodology
+------------
+[INTRODUCTION](Introduction.md)
 
-[Lexicon](LEXICON.md)
-    
+Objectives
+----------
+
+
+
+Work methodology
+----------------
+[WORKFLOW](WORKFLOW.md)
+
+
+Design of Experiences
+---------------------
 [TEST1](TEST1.md)
+
+
+Lexicon
+-------
+[Lexicon](LEXICON.md)
+
+
