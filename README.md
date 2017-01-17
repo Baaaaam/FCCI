@@ -10,4 +10,6 @@ Work methodology
 
 [Lexicon](LEXICON.md)
     
-[TEST1](TEST1.md)
+[How To]
+
+![How To use git](DOC/HowToGIT.pdf)
