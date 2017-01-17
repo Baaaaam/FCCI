@@ -22,4 +22,4 @@ Lexicon
 
 How To
 ------
-[How To use git](DOC/howtogit)
+[How To use git](DOC/howtogit.md)
