@@ -74,11 +74,11 @@ They acts on facilities :
 
 ## Output
 
-### Direct output
+	### Direct output
 
 An direct output is composed by raw data calculated by the model according to inputs.
 
-### Indirect output
+	### Indirect output
 
 Indirect outputs are all data calculated from direct output after one or several operations.
 
