@@ -64,9 +64,11 @@ Description of all the differents identified output metrics relevants for the
 considered test.
 
 Metrics can be deferencied into 2 categories:
+
 - direct output metrics, which should directly be produced by a generic fuel
   cycle tool, as material flows, materials compositions, power generated,
   ressource comsubsion...
+
 - indirect ouput metrics, that require addition computations to be determine, such as
   cost, radio-toxicity, decayheat....
 
@@ -74,13 +76,17 @@ Metrics can be deferencied into 2 categories:
 Cycle Input and Model simplification
 ------------------------------------
 Description of the all the degree of freedom of the experiences:
+
 - Definition of the input factors (variables and parameters) and their variation
   range/allowed values (if applicable), example:
+
   - burnup [ BU<sub>min</sub>, BU<sub>max</sub>]
   - FiFo/LiFo/random/mix
   - ...
+
 - Definition of the model simplification considered in the experience, such as:
-  - depletion
+
+- depletion
   - fuel fabrication
   - decay
   - *loading pattern optimisation*
