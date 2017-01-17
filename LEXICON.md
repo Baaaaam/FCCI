@@ -41,7 +41,11 @@ An input factor is not measurable in the real fleet and has to be estimated.
 	
 ## Model
 
-Represents the computationnal tool that processes the input and performing output calculation according to defined hypothesis. Here's a non exhaustive list of models : 
+Represents the computationnal tool that processes the input and performing output calculation according to defined hypothesis. 
+
+![Link between input, model and output]()
+
+Here's a non exhaustive list of models : 
 
 	- CYCLUS
 	- CLASS
