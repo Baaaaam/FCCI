@@ -79,7 +79,7 @@ Description of the all the degree of freedom of the experiences:
   - burnup [ BU<sub>min</sub>, BU<sub>max</sub>]
   - FiFo/LiFo/random/mix
   - ...
-- Definition of the model simplification considered in the experience:
+- Definition of the model simplification considered in the experience, such as:
   - depletion
   - fuel fabrication
   - decay
