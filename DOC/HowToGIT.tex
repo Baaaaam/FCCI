@@ -1,0 +1,110 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}   
+\usepackage{graphicx}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{caption} 
+\usepackage{float}
+\usepackage{multirow}
+\usepackage[paper=a4paper,margin=1cm]{geometry}
+\usepackage{verbatim}
+\usepackage{amstext}
+\usepackage[toc,page]{appendix}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+\lstdefinestyle{BashOutputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{lightgray},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+\captionsetup[table]{skip=10pt}
+
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black,
+}
+
+\title{How To work with GIT}
+\date{\today}
+\author{B. Mouginot, N. Thiolliere}
+
+% Début du document
+\begin{document}
+
+\maketitle
+\newgeometry{top=1.5cm, bottom=1.5cm, left=2.5cm, right=2cm}
+
+\tableofcontents
+%    \listoffigures
+%    \listoftables
+
+\section{Introduction}
+
+	This document explains minimum requirements needed for participating to FCCI. A lot of additionnal features are detailled in the following on ine documentation \url{https://git-scm.com/book/fr/v2}.
+
+	It is assumed here the reader has already a github account.
+
+\section{FCCI2017 group settings}
+
+	\subsection{Join the FCCI2017 group}
+
+	\subsection{Fork the repository}
+
+	\subsection{Clone your fork locally}
+
+  \begin{lstlisting}[style=BashInputStyle]
+    git clone https://github.com/fcci2017/FCCI.git
+  \end{lstlisting}
+  \bigskip
+
+	\subsection{Remote set up}
+
+  \begin{lstlisting}[style=BashInputStyle]
+    git remote add upstream https://github.com/fcci2017/FCCI.git
+    git remote set-url origin https://github.com/thiollie/FCCI.git
+    git pull upstream master
+  \end{lstlisting}
+  \bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	Test input command
+	\end{lstlisting}
+	\bigskip
+
+	\begin{lstlisting}[style=BashOutputStyle]
+	Test ouput command
+	\end{lstlisting}
+	\bigskip
+
+\section{Work with your fork}
+
+
+
+\end{document}
