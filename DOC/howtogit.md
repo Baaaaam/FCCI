@@ -13,8 +13,8 @@ Introduction
 FCCI2017 group settings
 =======================
 
-Contribute to the FCCI
------------------------
+Setup to Contribute to the FCCI
+-------------------------------
 This assume that you already have a github account, if you don't please visit
 and follow the instruction.
 
@@ -63,6 +63,43 @@ repository. Usually the link to the remote are used in only one direction :
 - from the main repository to you computer, -- `git rebase upstrean/master`
 - from your comtuper to you own fork (copy of the repository) -- `git push origin branch`
 - from you own fork -- Pull Request (done on github website)
+*more detail instruction are provided in the section below*
+
+*all the folowing instruction supposed that you are located in the repository
+folder*
+
+
+Branch Gymnastics
+-----------------
+Git allow you to have different branchs. Each branch can contain different
+version of you sources. For exemple, if you are developing a software, you can
+imagine have a `develop` which contain the lastest version of the software
+inluding all the lastest feature, a `master` branch containing the last stable
+version, a different branches for each features you are developing.
+you can switch between different branch using:
+```bash
+git checkout my_branch
+```
+you can create a new branch using:
+```bash
+git checkout -b my_new_branch
+```
+In this case a new branch will be create from the branch you are in.
+
+Grab a single file from an other branch:
+```bash
+git checkout source_branch my_file
+```
+
+
+Update your computer repository
+-------------------------------
+Before working on some improvement/addition to the project make sure you have
+the last version of it locally:
+```bash
+git fetch --all # This will download all the information about news commit from all the different remote you have setted up
+git rebase upstream master # add the last commit to your actual branch
+```
 
 
 
