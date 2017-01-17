@@ -24,7 +24,6 @@ An input variable is a factor that is observable in a real fleet and has to be d
 	- Cycle units (facilities and connections)
 	- Facilities parameters (BU, cooling time, tail assets, power, etc.)
 	- Facilities evolution
-	- Model hypothesis
 
 Or not ordonnated:
 
@@ -38,12 +37,18 @@ An input factor is not measurable in the real fleet and has to be estimated.
 	- Reactivity threshold for maximal burn up
 	- Time steps
 	- ...?
-	
+
+### Input simplifications
+
+	- One or several dephased reactors
+	- With or without reactor first loading
+	- other...
+
 ## Model
 
 Represents the computationnal tool that processes the input and performing output calculation, according to this figure:
 
-![Link between input, model and output](FIG/MODEL.png)
+![Fuel cycle simulation scheme](FIG/MODEL.png)
 
 Here's a non exhaustive list of models : 
 
@@ -51,34 +56,35 @@ Here's a non exhaustive list of models :
 	- CLASS
 	- COSI
 
-### Model simplifications
+A fuel cycle model includes sub models for each facility we want to modelize. Usually facility model simplifications are used to for optimizing CPU calculation time trying to not impacting the output. Simplifications have to be done according to targetted output variables.
 
-Model simplifications are used to for optimizing CPU calculation time without impacting the output. Simplifications have to be done according to targetted output variables.
+### Facility model 
 
-They acts on facilities : 
+A facility model is defined by its features.
 
 	- Fabrication plant : 
+
 		- Relation between storage and targeted burn up (Always same fissile fraction, mathematical relation, neural network, etc.)
+		- Performing separation or not
 
 	- Reactor : 
+	
 		- Bateman solver or recipe based depletion
-		- With or without reactor first loading 
 		- With or without fuel loading pattern neighborhood
-		- One or several dephased reactors
 		- Fixed burn up or fixed cycle time
-
-		=> ALL reactor model simplifications...
+		- Predictors from assembly calculation
+		- ...
 
 	- Pool and storage : 
 		- With or Without decay
 
 ## Output
 
-### 	Direct output
+### Direct output
 
 An direct output is composed by raw data calculated by the model according to inputs.
 
-###		Indirect output
+###	Indirect output
 
 Indirect outputs are all data calculated from direct output after one or several operations.
 
