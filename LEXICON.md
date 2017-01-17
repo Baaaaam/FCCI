@@ -78,6 +78,9 @@ A facility model is defined by its features.
 	- Pool and storage : 
 		- With or Without decay
 
+	- Storage
+		- Materials mixed or sorted according to time
+
 ## Output
 
 ### Direct output

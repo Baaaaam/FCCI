@@ -1,0 +1,192 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}   
+\usepackage{graphicx}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{caption} 
+\usepackage{float}
+\usepackage{multirow}
+\usepackage[paper=a4paper,margin=1cm]{geometry}
+\usepackage{verbatim}
+\usepackage{amstext}
+\usepackage[toc,page]{appendix}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstdefinestyle{BashInputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{yellow!20},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+\lstdefinestyle{BashOutputStyle}{
+  language=bash,
+  basicstyle=\small\sffamily,
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=3pt,
+  frame=tb,
+  columns=fullflexible,
+  backgroundcolor=\color{lightgray},
+  linewidth=0.9\linewidth,
+  xleftmargin=0.1\linewidth
+}
+
+\captionsetup[table]{skip=10pt}
+
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black,
+}
+
+\title{How To work with GIT}
+\date{\today}
+\author{B. Mouginot, N. Thiolliere}
+
+% Début du document
+\begin{document}
+
+\maketitle
+\newgeometry{top=1.5cm, bottom=1.5cm, left=2.5cm, right=2cm}
+
+\tableofcontents
+%    \listoffigures
+%    \listoftables
+
+\section{Introduction}
+
+	Ce document vise à fournir les bases minimales pour l'utilisation et le développement des resources disponibles sur le serveur git de l'in2p3, relatives aux études systèmes et scénarios. Pour une documentation complète et de très bonne qualité sur GIT, vous pouvez vous rendre à l'adresse \url{https://git-scm.com/book/fr/v2}
+
+\section{Connexion au gitlab in2p3}
+
+	La gestion du code CLASS et d'autres outils ou resources est actuellement géré par un dépot GIT situé à l'adresse suivante : \url{https://gitlab.in2p3.fr}. Ce site web fournit une interface graphique qui permet de naviguer sur le projet SENS (Systems for ElectroNuclear Scenarios) et ces sous projets associés. Chaque utilisateur a le droit de créer son propre sous projet et d'inviter des participants. 
+
+	\subsection{Se connecter à un dépot GIT en ligne via ligne de commande}
+
+	La méthode la plus simple pour gérer et utiliser un dépot GIT se fait via console. Placez vous à la location souhaitée pour brancher le serveur GIT. Pour la première utilisation, vous devez cloner le dépot distant avec la commande suivante :
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git clone adresse_du_depot
+	\end{lstlisting}
+
+	Les adresses des dépots GIT existants sont listés ci dessous:
+	\bigskip
+
+	\begin{itemize}
+		\item Dépot principal de CLASS : \url{git@gitlab.in2p3.fr:sens/CLASS.git}
+		\item Dépot pour les documents en partage : \url{git@gitlab.in2p3.fr:sens/Notes_et_Papiers.git}
+		\item Dépot pour la configuration zsh : \url{git@gitlab.in2p3.fr:sens/zsh_config.git}
+	\end{itemize}
+	\bigskip
+	Vous pouvez alors naviguer dans l'arborescence du dépot, et charger les branches disponibles. 
+
+	\subsection{Gestion via interface graphique}
+
+\section{Gestion des branches}
+
+	\subsection{Commandes de bases}
+
+	Les commandes suivantes permettent de visualiser les branches :
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git branch
+	git branch -a
+	git show-branch
+	\end{lstlisting}
+	\bigskip
+
+	La première commande permet de simplement voir les branches existantes sur votre dépot git. La deuxième commande suivante permet de visualiser les branches locale et distante (remote). La troisième écrit également les commits réalisés.
+
+	\subsection{Création de branch}
+
+	Une branche permet de travailler sur un programme sans affecter la version courante, supposée fonctionnelle. Usuellement, on peut créer une branche pour tout nouveau développement ou pour toute nouvelle fonctionnalité du code. Pour créer votre branche, relative à vos développements, ou tout simplement pour corriger un simple bug, la commande suivante peut être utilisée:
+	\bigskip
+	
+	\begin{lstlisting}[style=BashInputStyle]
+	git checkout -b NewBranch
+	\end{lstlisting}
+	\bigskip
+	
+	L'option -b permet de basculer directement dessus. En deux étapes distinctes, cela revient à faire ceci:
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git branch NewBranch
+	git checkout NewBranch
+	\end{lstlisting}
+	\bigskip
+
+	La première commande crée un clone de la branche master appelé NewBranch. La deuxième commande switch sur la nouvelle branche.
+
+\section{Modification et commit du contenu d'une branches de travail}
+
+	\subsection{Rajouter un nouveau fichier ou dossier au dépot}
+
+	Travaillez simplement comme vous le faite dans un répertoire standard. Ajoutez ou modifiez les fichiers et répertoires que vous souhaitez. Pour synchroniser les modifications sur votre branche, vous devez ajouter les nouveaux fichiers pour qu'ils soit suivis par GIT:
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git add nom_des_fichiers
+	\end{lstlisting}
+	\bigskip
+
+	Une fois les nouveaux fichiers \"trackés\", vous pouvez faire un commit sur votre branche. Cette action mets votre dépot local à jour mais pas le dépot distant.
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git commit -m "Commentaire decrivant votre commit"
+	\end{lstlisting}
+	\bigskip
+
+	Pour mettre à jour votre version avec le dépot distant, vous devez \"pousser\" votre commit:
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git push
+	\end{lstlisting}
+	\bigskip
+
+\section{Merge / fusion d'une branch avec la branche principale / master}
+
+	Lorsque votre travail sur votre branche est satisfaisant, qu'il a été testé un nombre incalculable de fois et que vous voulez proposer votre modification à la communauté, vous pouvez fusionner votre branche avec la branche master. Pour ce faire, il faut switcher sur la branche master et faire un merge:
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git checkout master
+	git merge YourBranchToMerge
+	\end{lstlisting}
+	\bigskip
+
+
+\section{Divers}
+
+	\subsection{Commandes importantes}
+
+	De manière générale, vous pouvez toujours faire un status de votre dépot local avec la commande:
+	\bigskip
+
+	\begin{lstlisting}[style=BashInputStyle]
+	git status
+	\end{lstlisting}
+	\bigskip
+	
+	Cette commande est très importante car elle fournit les commandes que vous devez probablement effectuer pour mettre votre dépot à jour, en fonction des modifications apportées.
+
+	\subsection{Du bon usage de la gestion des branches}
+	La bonne habitude de travail consiste à générer sa branche en fonction de la fonctionnalité que vous souhaitez apporter à partir de la branche principale (master). Lorsque vos modifications sont faites, vous pouvez proposer une merge request afin de valider vos modifications. De cette manière, la branche master avance régulièrement en fonction des modifications réalisées. Même si c'est relativement tentant au début, il convient d'éviter de créer une branche personnelle, sauf si c'est une branche de test qui n'a pas vocation à être fusionnée dans la branche master.
+
+\end{document}

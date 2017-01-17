@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Connexion au gitlab in2p3}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Se connecter \340 un d\351pot GIT en ligne via ligne de commande}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Gestion via interface graphique}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Gestion des branches}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Commandes de bases}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Cr\351ation de branch}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Modification et commit du contenu d'une branches de travail}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Rajouter un nouveau fichier ou dossier au d\351pot}{section.4}% 9
+\BOOKMARK [1][-]{section.5}{Merge / fusion d'une branch avec la branche principale / master}{}% 10
+\BOOKMARK [1][-]{section.6}{Divers}{}% 11
+\BOOKMARK [2][-]{subsection.6.1}{Commandes importantes}{section.6}% 12
+\BOOKMARK [2][-]{subsection.6.2}{Du bon usage de la gestion des branches}{section.6}% 13
