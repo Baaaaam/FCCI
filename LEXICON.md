@@ -32,7 +32,7 @@ Or not ordonnated:
 
 ### Input parameter
 
-An input factor is not measurable in the real fleet and has to be estimated.
+An input parameter is not measurable in the real fleet and has to be estimated.
 
 	- Reactivity threshold for maximal burn up
 	- Time steps
